@@ -1,0 +1,27 @@
+//for svg support
+//$experimental-support-for-svg: true;
+//$svg-gradient-shim-threshold: 0.1;
+
+@import "compass";
+@import "mixin";
+
+.b-speech-bubble {
+    color: #800080;
+    @include e(header) {
+        //header element
+        color: orange;
+    }
+
+    @include e(text) {
+        //text element
+        color: black;
+        @include m(link) {
+            //link modifier
+            color: green;
+            //link state
+            @include s(isActive) {
+                color: blue;
+            }
+        }
+    }
+}

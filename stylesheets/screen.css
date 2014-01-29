@@ -1,0 +1,15 @@
+/* line 8, ../sass/screen.scss */
+.b-speech-bubble {
+  color: #800080; }
+  /* line 2, ../sass/_bem.scss */
+  .b-speech-bubble__header {
+    color: orange; }
+  /* line 2, ../sass/_bem.scss */
+  .b-speech-bubble__text {
+    color: black; }
+    /* line 9, ../sass/_bem.scss */
+    .b-speech-bubble__text--link {
+      color: green; }
+      /* line 15, ../sass/_bem.scss */
+      .b-speech-bubble__text--link.isActive {
+        color: blue; }

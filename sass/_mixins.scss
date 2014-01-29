@@ -1,0 +1,42 @@
+//BEM mixin
+@mixin e($name) {
+  @at-root   #{&}__#{$name} {
+    @content;
+  }
+}
+
+//modifiers get appended with "--" and the $name
+@mixin m($name) {
+  @at-root   #{&}--#{$name} {
+    @content;
+  }
+}
+
+@mixin s($name) {
+  @at-root   #{&}.#{$name} {
+    @content;
+  }
+}
+
+
+//Ghost Vertical Align (middle)
+@mixin vac(){
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
+
+//Clearfix
+
+%clr {
+  *zoom: 1;
+  &:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both;
+  }
+}
